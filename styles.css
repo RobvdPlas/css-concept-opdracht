@@ -26,22 +26,58 @@ ul {
     color: white;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-size: 1.6rem;
 }
+
+button {
+    font-family: 'Roboto', sans-serif;
+    background: #ED4385;
+    border: none;
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem 2rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.144);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 
 header {
-    background: linear-gradient(red,black);
-    height: 60vh;
+    background: linear-gradient(#4845E4,#5722CD);
 }
 
-.center {
+.frontpage_article {
+    padding: 10rem;
+}
+
+.center-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+.squiggle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
