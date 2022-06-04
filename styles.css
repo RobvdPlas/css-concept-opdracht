@@ -17,13 +17,23 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+:root {
+    --paars: #5722CD;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lightgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+  }
+
 h1,h2,h3,h4 {
     font-family: 'Merriweather', serif;
     color: white;
 }
 
 ul {
-    color: white;
+    color: var(--lichtpaars);
 }
 
 nav {
@@ -35,13 +45,13 @@ nav {
 
 p {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: var(--zwart);
     font-size: 1.6rem;
 }
 
 button {
     font-family: 'Roboto', sans-serif;
-    background: #ED4385;
+    background: var(--roze);
     border: none;
     color: white;
     width: 15rem;
@@ -56,7 +66,7 @@ button:hover {
 
 
 header {
-    background: linear-gradient(#4845E4,#5722CD);
+    background: linear-gradient(var(--blauw), var(--paars));
 }
 
 .frontpage_article {
@@ -70,6 +80,10 @@ header {
     flex-direction: column;
 }
 
+.center-div > p {
+    color: white;
+}
+
 .squiggle {
     display: flex;
     align-items: center;
@@ -78,7 +92,7 @@ header {
 }
 
 main {
-    background: white;
+    background: var(--lightgrijs);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,19 +101,20 @@ main {
 
 .caption-text > p {
     font-size: 1.3rem;
-    color: black;
+    color: var(--zwart);
+    text-align: center;
     
 }
 
 .text_section {
-    text-align: center;
     width: 40vw;
     padding: 15rem;
 }
 
 .text_section > .text > p {
     font-size: 2.4rem;
-    color: #5722CD;
+    text-align: center;
+    color: var(--paars);
     font-weight: 800;
 }
 
@@ -111,7 +126,6 @@ main {
 }
 
 .item {
-    border: red;
     width: 20vw;
     height: 45vh;
     margin: 1rem auto;
@@ -125,21 +139,23 @@ main {
     height: 5rem;
 }
 
-.items > .item > figure,p,h2 {
+.items > .item > figure,h2 {
     padding-left: 2rem;
     text-align: left;
 }
 
 .items > .item > p {
-    color: #7A7A7A;
+    color: var(--grijs);
     font-size: 1rem;
     width: 18vw;
-    height: 10vh;
+    height: 20vh;
     word-wrap: break-word;
+    padding: 0rem 2rem 2rem 2rem;
+
 }
 
 .items > .item > h2 {
-    color: #5722CD;
+    color: var(--paars);
 }
 
 
